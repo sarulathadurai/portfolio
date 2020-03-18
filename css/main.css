@@ -2,6 +2,28 @@
     box-sizing: border-box;
 }
 
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+
+nav{
+    height:60px;
+    background-color: #5810b7;
+    flex-wrap: wrap;
+}
+
+a{
+    margin:10px;
+    padding:10px;
+    color: aliceblue;
+    font-family: 'Merriweather', serif;
+    font-size:25px;
+}
 
 .site-header{
  
@@ -11,7 +33,7 @@
     margin:20px 0px;
     position:relative;
     color:#5810b7 ;
-    height:500px;
+    height:400px;
 }
  .profile-pic{
      border-radius: 50%;
@@ -28,30 +50,20 @@
      margin:30px 0px;
      background-color: #8c43eb ;
      color:  aliceblue;
-     height:500px;
+     height:400px;
  }
 
-body{
-    font-family: 'Courier New', Courier, monospace;
-    margin: 0;
-    display:flex;
-    flex-direction: column;
-    
+.menu-align{
+  
+    float: right;
+    position: relative;
+    margin: 0px 50px;
+    padding: 10px;
 }
 
-nav{
-    height:60px;
-    background-color: #5810b7;
-    flex-wrap: wrap;
-}
+.innerdiv{
 
-a{
-    float:right;
-    margin:10px;
-    padding:10px;
-    color: aliceblue;
-    font-family: 'Merriweather', serif;
-    font-size:25px;
+    margin:50px 0px;
 }
 
 .ml2 {
@@ -61,24 +73,49 @@ a{
   
   .ml2 .letter {
     display: inline-block;
-    line-height: 0.5em;
   }
 
 @media only screen and (max-width:500px){
 
     a{
-        font-size:0px;
         float:none;  
+        font-size:15px;
+        font-weight: 400;
+   
     }
 
     nav{
         background-color: #ee6163;
+        
     }
-}
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
+    .site-text{
+
+        background-color: #ee6163;
     }
-  }
+
+    .menu-align{
+        
+        position: relative;
+        padding: 10px 0px;
+        margin:0px;
+    }
+
+    p{
+        line-height: 1.8;
+        font-size: 20px;
+        font-weight: 400;
+        text-align: center;
+    }
+
+    .site-header{
+        color:  #f34042;
+    }
+
+    .ml2 {
+        font-weight: 400;
+        font-size: 30px;
+     }
+
+
   
