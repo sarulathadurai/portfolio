@@ -13,7 +13,7 @@ body{
 
 nav{
     height:60px;
-    background-color: #5810b7;
+    background-color: #46454b;
     flex-wrap: wrap;
 }
 
@@ -23,6 +23,7 @@ a{
     color: aliceblue;
     font-family: 'Merriweather', serif;
     font-size:25px;
+    border: none;
 }
 
 .site-header{
@@ -32,7 +33,7 @@ a{
     flex-direction:column;
     margin:20px 0px;
     position:relative;
-    color:#5810b7 ;
+    color:#46454b ;
     height:400px;
 }
  .profile-pic{
@@ -48,7 +49,7 @@ a{
  }
  .site-text{
      margin:30px 0px;
-     background-color: #8c43eb ;
+     background-color: #46454b ;
      color:  aliceblue;
      height:400px;
  }
@@ -75,6 +76,50 @@ a{
     display: inline-block;
   }
 
+  .con_container {
+    width: 60%;
+    margin: 2rem auto; 
+  }
+
+ .con_gallery{
+
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(3,5fr) ;
+    grid-gap:1.2rem;
+
+ }
+
+ .gallery-item1{
+
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2 ;
+    grid-row-end:3;
+
+ }
+
+ .gallery-item2{
+
+    grid-column-start:3 ;
+    grid-column-end:4;
+    grid-row-start:2 ;
+    grid-row-end:3;
+    
+ }
+
+ .gallery-item3{
+
+    grid-column-start:4 ;
+    grid-column-end:5;
+    grid-row-start: 2;
+    grid-row-end:3;
+    
+ }
+
+
+
+
 @media only screen and (max-width:500px){
 
     a{
@@ -85,6 +130,8 @@ a{
     }
 
     nav{
+
+        display:none;
         background-color: #ee6163;
         
     }
@@ -108,6 +155,12 @@ a{
         text-align: center;
     }
 
+    .container {
+        width: 200px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
     .site-header{
         color:  #f34042;
     }
@@ -117,5 +170,44 @@ a{
         font-size: 30px;
      }
 
+     .con_container {
+        width: 100%;
+        margin: 2rem auto; 
+      }
 
-  
+     .con_gallery{
+
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: repeat(3,5fr) ;
+
+     }
+    
+     .gallery-item1{
+
+        grid-column-start:2;
+        grid-column-end:3;
+        grid-row-start:2 ;
+        grid-row-end:3;
+
+     }
+
+     .gallery-item2{
+
+        grid-column-start:3 ;
+        grid-column-end:4;
+        grid-row-start:2 ;
+        grid-row-end:3;
+        
+     }
+
+     .gallery-item3{
+
+        grid-column-start:4 ;
+        grid-column-end:5;
+        grid-row-start: 2;
+        grid-row-end:3;
+        
+     }
+
+    }
