@@ -17,7 +17,7 @@ nav{
     flex-wrap: wrap;
 }
 
-a{
+.a_style{
     margin:10px;
     padding:10px;
     color: aliceblue;
@@ -122,7 +122,7 @@ a{
 
 @media only screen and (max-width:500px){
 
-    a{
+    .a_style{
         float:none;  
         font-size:15px;
         font-weight: 400;
