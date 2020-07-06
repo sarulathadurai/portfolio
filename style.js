@@ -19,4 +19,7 @@ anime.timeline({loop: true})
     delay: 1000
   });
 
-  
+  $('.carousel').carousel()
+  $('.carousel').carousel({
+    interval: 2000
+  })

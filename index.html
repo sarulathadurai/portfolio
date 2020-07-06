@@ -1,73 +1,176 @@
-<html>
-    <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarulatha durai</title>
+    <link href="css/main.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
+</head>
+<body>
 
-        <title>Sarulatha</title>
-        <link href="css/main.css" rel="stylesheet">
-        <meta content="width=device-width, initial-scale=1 shrink-to-fit=no" name="viewport" >
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-        
-    </head> 
-      
-    <body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" 
+      data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" 
+      aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link" href="#about">About<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="#project">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#Blog">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>  
+    </nav> 
 
-        
-        <nav>
 
-          <div class="menu-align">
-           
-            <a href ="#about">About </a> 
-            <a  href ="#project">Projects</a> 
-            <a  href ="#blog">Blog</a>
-            <a  href ="#contact">Contact</a>
-                 
+
+    <div class="container mt-3 mb-3">
+        <img  class=" profile-pic" src="images/profilepic.jpg">
+        <h3 class="ml2 text">Sarulatha durai</h3>
+        <script src="style.js"></script>
+        <h3 class="text">Web Developer | Fullstack Developer</h3>
+
+    </div>
+
+    <div class="container" id="about">
+        <h2 class="text-center">About</h2>
+        <p class="text container">Hi! I am an aspiring web developer pursuing 3rd
+           year of computer science engineering from UCEK ,Tamil Nadu.I have did a 
+          lot of projects in React and wrote some blogs too.Peek below to know my expertise</p>
+    </div>
+
+    <div class="container" id="project">
+        <h2 class="text-center">Projects</h2>
+        <div class="row container">
+          <div class="row m-3">
+            <div class="card " style="width:18rem;">
+              <img class="card-img-top" src="images/bill.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text"><strong>Billing App</strong></h5>
+                <p class="card-text">No need of pen,paper,calculator. Here is the billing app for petty 
+                  shops where they can calculate amount for the provisions.</p>
+                <div class="btn-align">
+                  <a class="btn btn-success "href="https://billsurneed.netlify.app/">Billing App</a>
+                </div>  
+              </div>
+            </div>
           </div>
-        
-         </nav>
-        
-        <div class="site-header">
 
-            <img class="profile-pic" src="IMG_20200210_181911.jpg">
-            <h3 class="ml2 text">Sarulatha durai</h3>
-            <script src="style.js"></script>
-           <h3 class="text">Web Developer | Fullstack Developer</h3>
-       
-        </div>
-       
-       <div class="site-text" id="about">
-        <div class="innerdiv">
-          <h2 class="text">
-            About
-          </h2>
-            <p class="text">Hi, I'm Sarulatha pursuing Computer Science Engineering in UCEK,Tamil Nadu.<br>
-              <br>I am a budding programmer who aspire to become a full stack developer in web technology. 
-            </p>
-        </div>
-             
-      </div>
+          <div class="row m-3">
+            <div class="card col " style="width:18rem;">
+              <img class="card-img-top" src="images/lyric.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text"><strong>LyricFinder</strong></h5>
+                <p class="card-text">Ever wondered what is the lyrics of the song which I am hearing? 
+                  LyricFinder is here to help you get the lyrics of thousands of songs .
+                </p>
+                <div class="btn-align">
+                  <a class="btn btn-success" href="https://lyricfinderz.netlify.app/">Lyric Finder</a>
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div class="site-header" id="project">
-        <div class="innerdiv">
+          <div class="row m-3">
+            <div class="card col " style="width:18rem;">
+              <img class="card-img-top" src="images/quiz.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text"><strong>Quiz App</strong></h5>
+                <p class="card-text">Time and tide waits for none! A quiz app on javascript which may help tune yourself for an interview.
+                  Answer questions within the given time!</p>
+                 <div class="btn-align">
+                  <a class="btn btn-success" href="https://quiz-in-javascript.netlify.app/">quiz-in-javascript</a>
+                 </div> 
+              </div>
+            </div>
+          </div>          
+        </div>
+
+        <div class="row container">
+          <div class="row m-3">
+            <div class="card col " style="width:18rem;">
+              <img class="card-img-top" src="images/Dictionary.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text"><strong>Dictionary</strong></h5>
+                <p class="card-text">
+                  Life is all about find meaning of your life.For finding meaning for words here is a dictionary where you can get meanings of words.
+                </p>
+                <div class="btn-align">
+                  <a class="btn btn-success" href="https://findmeaning.netlify.app/">Dictionary</a>
+                </div>
+              </div>
+            </div>
+          </div>
           
-          <h2 class="text">
-            Projects
-          </h2>
+          <div class="row m-3">
+            <div class="card col " style="width:18rem;">
+              <img class="card-img-top" src="images/weather.png" alt="Card image cap">
+              <div class="card-body">
+                <h5 class="card-title text"><strong>weathersearcher</strong></h5>
+                <p class="card-text">No one can predict the future but somehow we are trying to predict.This weather app helps you to 
+                  get the live weather conditions of any part of the world.</p>
+                <div>
+                <div class="btn-align">
+                  <a class="btn btn-success" href="https://weathersearcher.netlify.app/">weathersearcher</a>
+                </div>  
+                </div>  
+              </div>
+            </div>
+          </div>
 
-            <p class=text>Amazing projects are yet to come up soon...stay tuned! </p>
         </div>
-      </div>
+       </div>
 
-      <div class="site-text" id= blog>
-        <div class="innerdiv">
-           <h2 class="text">
-             Blogs
-           </h2>
-           <p class="text">Amazing blogs are yet to come up soon...stay tuned! </p>
-        </div>   
-      </div>
+       <div class="container" id="Blog">
+          <h2 class="text-center">Blogs</h2>
+          <div class="row">
+            <div class="row m-3">
+              <div class="card col " style="width:18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text"> <strong>Fetch api using axios and fetch api</strong></h5>
+                  <p class="card-text">Fetch api is a built in promise-based api. Let's look at an example,here we took json placeholder API which is generally used for testing....</p>
+                  <a href="https://dev.to/sarulathadurai/fetch-api-using-axios-and-fetch-api-hcc">Read</a>
+                </div>
+              </div>
+            </div>
+            <div class="row m-3">
+              <div class="card col " style="width:18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text"><strong> How to use map() reduce() and filter()?</strong></h5>
+                  <p class="card-text">The map function is capable of accessing each object in an array and perform the desired operation on the each item of an array...                </p>
+                  <a  href="https://dev.to/sarulathadurai/how-to-use-map-reduce-and-filter-373">Read</a>
+                </div>
+              </div>
+            </div>
+            <div class="row m-3">
+              <div class="card col " style="width:18rem;">
+                <div class="card-body">
+                  <h5 class="card-title text"><strong>How to overcome Imposter Syndrome? </strong> 
+                  </h5>
+                  <p class="card-text">Literally everybody in any field has higher possibilities of falling in imposter syndrome.
+                    From childhood we had been practised to compare ourselves with our peers ...
+                  </p>
+                  <a href="https://dev.to/sarulathadurai/how-to-overcome-imposter-syndrome-2p77">Read</a>
+                </div>
+              </div>
+            </div>
+          </div>
+       </div>
 
-
-      <div class="site-header" id="contact">
-        <div class="innerdiv">
+       <div class="container" id="contact">
           
           <h2 class="text">
             Contact
@@ -104,8 +207,7 @@
                  <a href="https://github.com/sarulathadurai" target="_blank">
                   <img style="object-fit: contain;" id="github" src="https://img.icons8.com/nolan/64/github.png"/>
                  </a>
-    
-                </div>
+  
               </div>
              
           </div>       
@@ -113,7 +215,9 @@
         </div>
       </div>
 
-
-    </body>
-
+      <!-- jquery plugins -->
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
 </html>
