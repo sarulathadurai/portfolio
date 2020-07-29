@@ -10,6 +10,22 @@ body{
     
 }
 
+.btn{
+   background-color: black;
+   color: white;
+   box-shadow:5px 5px 5px rgb(139, 131, 131) ;
+}
+
+.bg-design{
+
+   background-color: black;
+}
+
+
+p{
+   text-align: justify;
+}
+
  .profile-pic{
     display: block;
      border-radius: 55%;
@@ -20,10 +36,12 @@ body{
     position: relative;
 }
 
+.text-center{
+   font-family: 'Fredoka One', cursive;
+}
 
 .text{
-     text-align: center;
-    
+     text-align: center;   
  }
 
  .btn-align{
@@ -35,10 +53,41 @@ body{
     
  }
 
+ .card{
+
+   box-shadow: 10px 10px 10px rgb(131, 123, 123);
+   
+ }
+
+ #about{
+
+   flex:1;
+   margin: auto;
+   color: white;
+ }
+
+ #intro{
+
+   flex: 1;
+   margin: auto;
+ }
+
+ .about{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+ }
+
+ .container{
+   margin: auto;
+   justify-content: center;
+   align-items: center;
+ }
 
 .ml2 {
     font-weight: 400;
     font-size: 40px;
+    color: white;
  }
   
   .ml2 .letter {
@@ -92,12 +141,16 @@ body{
     
  }
 
-
+ .embed-responsive .card-img-top {
+   object-fit: cover;
+}
 
 
 @media only screen and (max-width:500px){
 
-
+    .about{
+       flex-direction: column;
+    }
     .ml2 {
         font-weight: 400;
         font-size: 30px;

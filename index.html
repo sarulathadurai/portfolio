@@ -7,6 +7,7 @@
     <link href="css/main.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     
 </head>
 <body>
@@ -35,50 +36,46 @@
       </div>  
     </nav> 
 
-
-
-    <div class="container mt-3 mb-3">
-        <img  class=" profile-pic" src="images/profilepic.jpg">
+    <div class="about mb-3">
+        <div id="intro">
+          <img  class="profile-pic mt-3" src="images/profilepic.jpg">
         <h3 class="ml2 text">Sarulatha durai</h3>
         <script src="style.js"></script>
-        <h3 class="text">Web Developer | Fullstack Developer</h3>
+        <h3 class="text" style="color: white;">Web Developer | Fullstack Developer</h3>
 
+        </div>
+        <div class="container" id="about">
+          <div class="m-3">
+            <h2 class="text-center">About</h2>
+          </div>
+            <p>Hi! I am an aspiring web developer pursuing 3rd
+               year of computer science engineering from UCEK ,Tamil Nadu.I have did a 
+              lot of projects in React and wrote some blogs too.Peek below to know my expertise.</p>
+        </div>
+        </div>
     </div>
 
-    <div class="container" id="about">
-        <h2 class="text-center">About</h2>
-        <p class="text container">Hi! I am an aspiring web developer pursuing 3rd
-           year of computer science engineering from UCEK ,Tamil Nadu.I have did a 
-          lot of projects in React and wrote some blogs too.Peek below to know my expertise</p>
-    </div>
 
     <div class="container" id="project">
-        <h2 class="text-center">Projects</h2>
+        <div class="m-3">
+          <h2 class="text-center">Projects</h2>
+        </div>
+        
         <div class="row container">
-          <div class="row m-3">
-            <div class="card " style="width:18rem;">
-              <img class="card-img-top" src="images/bill.png" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title text"><strong>Billing App</strong></h5>
-                <p class="card-text">No need of pen,paper,calculator. Here is the billing app for petty 
-                  shops where they can calculate amount for the provisions.</p>
-                <div class="btn-align">
-                  <a class="btn btn-success "href="https://billsurneed.netlify.app/">Billing App</a>
-                </div>  
-              </div>
-            </div>
-          </div>
-
+        
           <div class="row m-3">
             <div class="card col " style="width:18rem;">
-              <img class="card-img-top" src="images/lyric.png" alt="Card image cap">
+              <div class="embed-responsive embed-responsive-16by9">
+                <img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/memory.png" />
+             </div>
+              <!-- <img class="card-img-top" src="images/lyric.png" alt="Card image cap"> -->
               <div class="card-body">
-                <h5 class="card-title text"><strong>LyricFinder</strong></h5>
-                <p class="card-text">Ever wondered what is the lyrics of the song which I am hearing? 
-                  LyricFinder is here to help you get the lyrics of thousands of songs .
+                <h5 class="card-title text"><strong>Memory Game</strong></h5>
+                <p class="card-text">
+                  Built a memory-card game in Vanilla js to all the Ben-10 fans who are challenged to match the correct aliens.
                 </p>
                 <div class="btn-align">
-                  <a class="btn btn-success" href="https://lyricfinderz.netlify.app/">Lyric Finder</a>
+                  <a class="btn" href="https://ben10memoryworld.netlify.app/">Memory Game</a>
                 </div>
               </div>
             </div>
@@ -86,13 +83,34 @@
 
           <div class="row m-3">
             <div class="card col " style="width:18rem;">
-              <img class="card-img-top" src="images/quiz.png" alt="Card image cap">
+              <div class="embed-responsive embed-responsive-16by9">
+                <img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/lyric.png" />
+             </div>
+              <!-- <img class="card-img-top" src="images/lyric.png" alt="Card image cap"> -->
+              <div class="card-body">
+                <h5 class="card-title text"><strong>LyricFinder</strong></h5>
+                <p class="card-text">Ever wondered what is the lyrics of the song which I am hearing? 
+                  LyricFinder is here to help you get the lyrics.
+                </p>
+                <div class="btn-align">
+                  <a class="btn" href="https://lyricfinderz.netlify.app/">Lyric Finder</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row m-3">
+            <div class="card col " style="width:18rem;">
+              <div class="embed-responsive embed-responsive-16by9">
+                <img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/quiz.png" />
+             </div>
+              <!-- <img class="card-img-top" src="images/quiz.png" alt="Card image cap"> -->
               <div class="card-body">
                 <h5 class="card-title text"><strong>Quiz App</strong></h5>
-                <p class="card-text">Time and tide waits for none! A quiz app on javascript which may help tune yourself for an interview.
-                  Answer questions within the given time!</p>
+                <p class="card-text">A quiz app on javascript which may help tune yourself for an interview.
+                  Answer soon as clock ticks!</p>
                  <div class="btn-align">
-                  <a class="btn btn-success" href="https://quiz-in-javascript.netlify.app/">quiz-in-javascript</a>
+                  <a class="btn" href="https://quiz-in-javascript.netlify.app/">quiz-in-javascript</a>
                  </div> 
               </div>
             </div>
@@ -102,30 +120,51 @@
         <div class="row container">
           <div class="row m-3">
             <div class="card col " style="width:18rem;">
-              <img class="card-img-top" src="images/Dictionary.png" alt="Card image cap">
+              <div class="embed-responsive embed-responsive-16by9">
+                <img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/dictionary.png" />
+             </div>
               <div class="card-body">
                 <h5 class="card-title text"><strong>Dictionary</strong></h5>
                 <p class="card-text">
                   Life is all about find meaning of your life.For finding meaning for words here is a dictionary where you can get meanings of words.
                 </p>
                 <div class="btn-align">
-                  <a class="btn btn-success" href="https://findmeaning.netlify.app/">Dictionary</a>
-                </div>
+                  <a class="btn" href="https://findmeaning.netlify.app/">Dictionary</a>
+                </div> 
               </div>
             </div>
           </div>
           
           <div class="row m-3">
             <div class="card col " style="width:18rem;">
-              <img class="card-img-top" src="images/weather.png" alt="Card image cap">
+              <div class="embed-responsive embed-responsive-16by9">
+                <img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/weather.png" />
+             </div>
+              <!-- <img class="card-img-top" src="images/weather.png" alt="Card image cap"> -->
               <div class="card-body">
                 <h5 class="card-title text"><strong>weathersearcher</strong></h5>
-                <p class="card-text">No one can predict the future but somehow we are trying to predict.This weather app helps you to 
+                <p class="card-text">Ever wonder what the other part of world dealing with.This weather app helps you to 
                   get the live weather conditions of any part of the world.</p>
                 <div>
                 <div class="btn-align">
-                  <a class="btn btn-success" href="https://weathersearcher.netlify.app/">weathersearcher</a>
+                  <a class="btn" href="https://weathersearcher.netlify.app/">weathersearcher</a>
                 </div>  
+                </div>  
+              </div>
+            </div>
+          </div>
+
+          <div class="row m-3">
+            <div class="card " style="width:18rem;">
+              <div class="embed-responsive embed-responsive-16by9">
+                <img alt="Card image cap" class="card-img-top embed-responsive-item" src="images/bill.png" />
+             </div>
+              <div class="card-body">
+                <h5 class="card-title text"><strong>Billing App</strong></h5>
+                <p class="card-text">No need of pen,paper,calculator. Here is the billing app for petty 
+                  shops where they can calculate bills for the customer.</p>
+                <div class="btn-align">
+                  <a class="btn"href="https://billsurneed.netlify.app/">Billing App</a>
                 </div>  
               </div>
             </div>
@@ -135,8 +174,8 @@
        </div>
 
        <div class="container" id="Blog">
-          <h2 class="text-center">Blogs</h2>
-          <div class="row">
+          <h2 class="text-center mt-3">Blogs</h2>
+          <div class="row container">
             <div class="row m-3">
               <div class="card col " style="width:18rem;">
                 <div class="card-body">
@@ -172,7 +211,7 @@
 
        <div class="container" id="contact">
           
-          <h2 class="text">
+          <h2 class="text-center mt-3">
             Contact
           </h2>
      
