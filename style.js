@@ -23,3 +23,4 @@ anime.timeline({loop: true})
   $('.carousel').carousel({
     interval: 2000
   })
+

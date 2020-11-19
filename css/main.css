@@ -11,19 +11,14 @@ body{
 }
 
 .btn{
-   background-color: black;
+   background-color: #343a40;
    color: white;
-   box-shadow:5px 5px 5px rgb(139, 131, 131) ;
+   margin: 4px;
+   /* box-shadow:5px 5px 5px rgb(139, 131, 131) ; */
 }
-
-.bg-design{
-
-   background-color: black;
-}
-
 
 p{
-   text-align: justify;
+   text-align: center;
 }
 
  .profile-pic{
@@ -49,13 +44,12 @@ p{
     text-align:center;
     display: block;
     margin: auto;
-    position: relative;
-    
+    position: relative;   
  }
 
  .card{
 
-   box-shadow: 10px 10px 10px rgb(131, 123, 123);
+   box-shadow: 5px 5px 5px rgb(131, 123, 123);
    
  }
 
@@ -63,7 +57,7 @@ p{
 
    flex:1;
    margin: auto;
-   color: white;
+
  }
 
  #intro{
@@ -73,7 +67,7 @@ p{
  }
 
  .about{
-    background-color: black;
+    
     display: flex;
     flex-direction: row;
  }
@@ -87,7 +81,7 @@ p{
 .ml2 {
     font-weight: 400;
     font-size: 40px;
-    color: white;
+ 
  }
   
   .ml2 .letter {
