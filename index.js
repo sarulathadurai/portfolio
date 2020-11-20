@@ -1,6 +1,6 @@
 var projects = [
     {
-        name:" 🤯 Ui-Picker 🤯 ",
+        name:"  Ui-Picker  ",
         description:"Ui-picker is a website built using Vanilla-JS which helps to pick colours for the website to enrich the user-interface.It also has template where you can change the colours of the components.",
         href:"https://ui-picker.netlify.app/",   
         ghref:"https://github.com/sarulathadurai/ui-picker",
