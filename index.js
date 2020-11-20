@@ -1,10 +1,19 @@
 var projects = [
     {
+        name:" 🤯 Ui-Picker 🤯 ",
+        description:"Ui-picker is a website built using Vanilla-JS which helps to pick colours for the website to enrich the user-interface.It also has template where you can change the colours of the components.",
+        href:"https://ui-picker.netlify.app/",   
+        ghref:"https://github.com/sarulathadurai/ui-picker",
+        src:"images/ui.png",
+        stack:"HTML,CSS,JavaScript"
+    },
+    {
         name:" 🤯 Memory World 🤯 ",
         description:"Built a memory-card game in Vanilla js to all the Ben-10 fans who are challenged to match the correct aliens.",
         href:"https://ben10memoryworld.netlify.app/",   
         ghref:"https://github.com/sarulathadurai/memory-game",
         src:"images/memory.png",
+        stack:"HTML,CSS,JavaScript"
     },
     {
         name:"Quiz App",
@@ -12,6 +21,7 @@ var projects = [
         href:"https://quiz-in-javascript.netlify.app/",
         ghref:"https://github.com/sarulathadurai/QuizApp", 
         src:"images/quiz.png",  
+        stack:"React ,Bootstrap"
     },
     {
         name:"Dictionary",
@@ -19,6 +29,7 @@ var projects = [
         href:"https://findmeaning.netlify.app/",
         ghref:"https://github.com/sarulathadurai/Dictionary.git",   
         src:"images/dictionary.png",
+        stack:"React, Bootstrap ,googleApi"
     },
     {
         name:"Weather Finder",
@@ -26,6 +37,7 @@ var projects = [
         href:"https://weathersearcher.netlify.app/", 
         ghref:"https://github.com/sarulathadurai/weather",
         src:"images/weather.png",
+        stack:"React, Bootstrap,OpenWeatherMap Api"
     },
     {
         name:"Lyric Finder",
@@ -33,6 +45,7 @@ var projects = [
         href:"https://lyricfinderz.netlify.app/",   
         ghref:"https://github.com/sarulathadurai/LyricFinder",
         src:"images/lyric.png",
+        stack:"React, Bootstrap ,Rest Api"
     }
 ]
 
@@ -65,6 +78,10 @@ var img = document.createElement('img');
 img.src = projects[i].src;
 img.classList.add("card-img-top")
 
+var para1 = document.createElement("p");
+var node = document.createTextNode(`Stack :${projects[i].stack}`);
+para1.appendChild(node);
+
 var align = document.createElement('div');
 align.classList.add('btn-align');
 var a1 = document.createElement('a');
@@ -78,7 +95,7 @@ a2.href=projects[i].ghref;
 a2.innerHTML="github";
 
 align.append(a1,a2);
-cardBody.append(para,img,align);
+cardBody.append(para,img,para1,align);
 collapse.appendChild(cardBody);
 card.append(header,collapse);
 container.append(card);
